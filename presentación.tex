@@ -1,0 +1,157 @@
+\documentclass{beamer}
+\usetheme{Madrid}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor}
+\usepackage{nicematrix}
+\usepackage{tikz}
+\usepackage{comment}
+\usepackage{hyperref}
+\usepackage{fancyvrb}
+\usepackage{mathtools}
+\usepackage{comment}
+\usepackage{array}
+\usepackage{pgfcore}
+\usepackage{listings}
+\usepackage{color}
+\definecolor{munsell}{rgb}{0.0, 0.5, 0.69}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{minas}{RGB}{0.244, 0.172, 0.36}
+\definecolor{PUJ}{RGB}{44, 86, 151}
+\definecolor{PUJ2}{RGB}{43, 93, 156}
+\definecolor{PUJ3}{RGB}{20, 52, 107}
+\definecolor{cyandk}{rgb}{0.0, 0.72, 0.92}
+\setbeamerfont{frametitle}{size=\LARGE ,series=\bfseries}
+\setbeamercolor{frametitle}{fg=black, bg=white} %% title of the beamer
+\setbeamercolor{titlelike}
+{parent=structure,bg=PUJ2}
+\setbeamercolor{title}{fg=white, bg=black} 
+%\setbeamercolor{navigation symbols}{fg=white, bg=white}
+\setbeamercolor*{palette primary}{use=structure,fg=black,bg=yellow}
+\setbeamercolor*{palette secondary}{use=structure,fg=white,bg=black}
+\setbeamercolor*{palette tertiary}{use=structure,fg=white,bg=black}
+
+\setbeamercolor{block title}{bg=black,fg=white}
+
+
+%% code information
+\lstset{frame=tb,
+  language=Python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  classoffset=1,
+  morekeywords={True,False}, keywordstyle=\color{munsell}, 
+  classoffset=0, 
+  keywordstyle=\color{blue},  
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{PUJ3},
+  numberstyle=\tiny\color{gray},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=4,
+}
+
+%% You can change default language in the middle of document with \lstset{language=Java}.
+
+
+%% PUT or Remove the logo in a slide.
+
+
+%% Information topic
+
+\institute{BIT}
+\date{2020}
+
+\title[BIT] %optional
+{Proyectos finales Bootcamp Data Science}
+\subtitle{}
+
+\author[Iván Andrés Trujillo] 
+{
+Iván Andrés Trujilllo Abella}
+
+\institute[] 
+{
+  BIT\\
+  \and
+  
+\textbf{ivantrujillo129@gmail.com}
+}
+
+\date[BIT] % (optional)
+
+\newif\ifplacelogo % create a new conditional
+\placelogotrue % set it to true
+%\logo{\ifplacelogo\color{red}\rule{.5cm}{.5cm}\fi}
+\logo{\ifplacelogo \includegraphics[height= 1cm]{BIT.eps}\fi}
+
+
+
+\begin{document}
+
+
+
+\frame{\titlepage}
+
+
+\begin{frame}{4 modulos}
+\begin{itemize}
+\item Principios básicos, estructuras y algoritmia
+\item Manejo de bases de datos
+\item Análisis de datos y conocimiento 
+\item Modelos bivariados y multivariados
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Herramientas}
+\begin{itemize}
+\item Python 3.x
+\item Pandas
+\item Scikit-learn
+\item Statsmodels
+\item Entre otras como matplotlib y git 
+\end{itemize}
+\end{frame}
+
+
+
+
+
+\begin{frame}{Skills}{Core}
+Descubrimiento del conocimiento y toma de decisiones.
+\end{frame}
+
+
+\begin{frame}{Predicción de bancarota usando arboles de decisión}{Diego Herrera}
+Este tema tiene una agenda activa y vertiginosa de las aplicaciones de técnicas multivariadas clásicas y de inteligencia artificial,  este trabajo aporta evidencia a la incipiente literatura colombiana.
+\end{frame}
+
+\begin{frame}{Determinantes de la educación }{Daniela salgado y juan raigoso}
+
+Este proyecto es de importancia debido a que instituciones como el ICFES genera convocatorias constantes de financiamiento de esta base.
+
+
+\end{frame}
+
+
+\begin{frame}{Desigualdad en la Mortalidad materna departamental: Caso colombiano}{Carlos quintero}
+La mortalidad materna es un indicador multicrtierio diferentes instituciones como la organización mundial de salud.
+\end{frame}
+
+
+
+
+
+
+
+
+\end{document}
